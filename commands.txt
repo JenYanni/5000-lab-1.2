@@ -20,6 +20,8 @@ about.ipynb	images		slides
 reference.bib: No such file or directory
 (base) jenyanniguo@Yannis-MacBook-Pro simple_quarto_website % 
 
+
+
 (base) jenyanniguo@Yannis-MacBook-Pro 5000-lab-1.2 % git add .
 (base) jenyanniguo@Yannis-MacBook-Pro 5000-lab-1.2 % git commit
 hint: Waiting for your editor to close the file... error: There was a problem with the editor 'vi'.
@@ -31,6 +33,38 @@ zsh: command not found: -m
 error: switch `m' requires a value
 (base) jenyanniguo@Yannis-MacBook-Pro 5000-lab-1.2 % git push
 Everything up-to-date
+
+(base) jenyanniguo@Yannis-MacBook-Pro ~ % cd 5000-lab-1.2/simple_quarto_website
+(base) jenyanniguo@Yannis-MacBook-Pro simple_quarto_website % git add .
+(base) jenyanniguo@Yannis-MacBook-Pro simple_quarto_website % git commit -m 5000-lab-1.2/simple_quarto_website
+[main e948975] 5000-lab-1.2/simple_quarto_website
+ 14 files changed, 2020 insertions(+), 26 deletions(-)
+ delete mode 100644 simple_quarto_website/_site/mermaid diagram.png
+ create mode 100644 simple_quarto_website/_site/site_libs/quarto-diagram/mermaid-init.js
+ create mode 100644 simple_quarto_website/_site/site_libs/quarto-diagram/mermaid.css
+ create mode 100644 simple_quarto_website/_site/site_libs/quarto-diagram/mermaid.min.js
+ create mode 100644 simple_quarto_website/_site/slides/images/Georgetown.png
+ create mode 100644 simple_quarto_website/slides/images/Georgetown.png
+(base) jenyanniguo@Yannis-MacBook-Pro simple_quarto_website % git push 5000-lab-1.2/simple_quarto_website
+fatal: '5000-lab-1.2/simple_quarto_website' does not appear to be a git repository
+fatal: Could not read from remote repository.
+Please make sure you have the correct access rights
+and the repository exists.
+(base) jenyanniguo@Yannis-MacBook-Pro simple_quarto_website % git push
+Enumerating objects: 36, done.
+Counting objects: 100% (36/36), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (21/21), done.
+Writing objects: 100% (21/21), 1.26 MiB | 6.18 MiB/s, done.
+Total 21 (delta 12), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (12/12), completed with 12 local objects.
+To https://github.com/JenYanni/5000-lab-1.2.git
+   24e9047..e948975  main -> main
+(base) jenyanniguo@Yannis-MacBook-Pro simple_quarto_website % 
+
+
+
+
 
 (base) jenyanniguo@Yannis-MacBook-Pro ~ % ssh jenyanni@gtown3.reclaimhosting.com
 (jenyanni@gtown3.reclaimhosting.com) Password: 
@@ -209,6 +243,62 @@ slides/slides_files/figure-revealjs/cell-2-output-1.png
 sent 9167981 bytes  received 2312 bytes  873361.24 bytes/sec
 total size is 13707887  speedup is 1.49
 (base) jenyanniguo@Yannis-MacBook-Pro simple_quarto_website % 
+
+
+Most recent rsync:
+(base) jenyanniguo@Yannis-MacBook-Pro simple_quarto_website % rsync -avz _site/ jenyanni@gtown3.reclaimhosting.com:/home/jenyanni/public_html/_site
+(jenyanni@gtown3.reclaimhosting.com) Password: 
+building file list ... done
+./
+.DS_Store
+about.html
+index.html
+search.json
+about_files/
+about_files/figure-html/
+about_files/figure-html/cell-2-output-1.png
+site_libs/
+site_libs/bootstrap/
+site_libs/bootstrap/bootstrap.min.css
+site_libs/clipboard/
+site_libs/quarto-diagram/
+site_libs/quarto-diagram/mermaid-init.js
+site_libs/quarto-diagram/mermaid.css
+site_libs/quarto-diagram/mermaid.min.js
+site_libs/quarto-html/
+site_libs/quarto-html/quarto-html.min.css
+site_libs/quarto-nav/
+site_libs/quarto-search/
+site_libs/revealjs/
+site_libs/revealjs/dist/
+site_libs/revealjs/dist/theme/
+site_libs/revealjs/dist/theme/quarto.css
+site_libs/revealjs/dist/theme/fonts/
+site_libs/revealjs/dist/theme/fonts/league-gothic/
+site_libs/revealjs/dist/theme/fonts/source-sans-pro/
+site_libs/revealjs/plugin/
+site_libs/revealjs/plugin/highlight/
+site_libs/revealjs/plugin/markdown/
+site_libs/revealjs/plugin/math/
+site_libs/revealjs/plugin/notes/
+site_libs/revealjs/plugin/pdf-export/
+site_libs/revealjs/plugin/quarto-line-highlight/
+site_libs/revealjs/plugin/quarto-support/
+site_libs/revealjs/plugin/reveal-menu/
+site_libs/revealjs/plugin/search/
+site_libs/revealjs/plugin/zoom/
+slides/
+slides/slides.html
+slides/images/
+slides/images/Georgetown.png
+slides/slides_files/
+slides/slides_files/figure-revealjs/
+slides/slides_files/figure-revealjs/cell-2-output-1.png
+
+sent 1328587 bytes  received 5980 bytes  127101.62 bytes/sec
+total size is 16961469  speedup is 12.71
+(base) jenyanniguo@Yannis-MacBook-Pro simple_quarto_website % 
+
 
 
 
