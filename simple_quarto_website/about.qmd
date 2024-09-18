@@ -1,0 +1,31 @@
+'''
+---
+title: "DSAN 5000 Lab 1.2 About"
+Author: Jen Guo
+---
+
+About this site
+<h1>This is the first header: Data Science is amazing!</h1>
+<p>Lorem ipsum odor amet, consectetuer adipiscing elit. Pellentesque curae malesuada tellus ligula odio integer. Tempus purus tristique adipiscing accumsan vestibulum sit metus convallis. Fringilla quam nostra nisl euismod sociosqu dolor. Ante dictumst neque quam erat posuere bibendum pulvinar ipsum. Aliquet elit varius curabitur ante est senectus. Amaximus tempus quam mus scelerisque ullamcorper habitant primis.
+<br></br>
+Elementum curae vulputate molestie dui feugiat egestas. Metus rhoncus aptent varius nec egestas suspendisse. Pretium porttitor diam ligula congue vitae dignissim. Fames cras curabitur cubilia efficitur diam, dolor dictum ultricies. Massa a gravida, nascetur vivamus ac quis iaculis. Fames lacus hac gravida aenean litora neque sit. Venenatis leo penatibus consequat molestie mus. Semper fermentum finibus elementum ultricies conubia tellus donec luctus.</p>
+<br></br>
+
+```{python}
+import matplotlib.pyplot as plt
+import numpy as np
+
+x_axis_points = np.array([2,5,8])
+y_axis_points = np.array([5,4,6])
+
+plt.plot(x_axis_points, y_axis_points, 'o')
+plt.show()
+```
+
+
+<h2>This is the second header: Washington, D.C.</h2>
+<p>Lorem ipsum odor amet, consectetuer adipiscing elit. Pulvinar pulvinar justo; ut dictum ipsum integer? Rutrum adipiscing at dignissim praesent, nulla maximus gravida. Lectus lobortis hac rhoncus ornare dui. Sit diam volutpat ullamcorper; ultrices netus viverra non commodo suspendisse. Fringilla penatibus inceptos convallis sed commodo varius tellus sem.</p>
+<br></br>
+
+<h3>This is the third header: Georgetown University</h3>
+<p>Lorem ipsum odor amet, consectetuer adipiscing elit. Platea placerat sem; vehicula amet litora semper. Lacinia tellus nulla tincidunt torquent gravida vestibulum. Habitasse augue semper elit scelerisque eu sagittis gravida maximus consectetur. Torquent sit per commodo orci nunc nec nullam porttitor. Nascetur integer eget blandit mollis ut ante ut.</p>

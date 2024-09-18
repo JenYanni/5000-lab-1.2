@@ -1,0 +1,129 @@
+---
+title: "DSAN 5000 lab 1.2 simple_quarto_website"
+Author: Jen Guo
+---
+
+This is a Quarto website.
+
+To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+
+<h2>Table of Contents</h2>
+<ol class="toc-list" >
+    <li>
+    <span class="title">This is the first header: Introduction to Data Science.</span>
+    <span class="page">Page 1</span>
+    </li>
+    <li>
+    <span class="title">This is the second header: Methodology in Data Analysis.</span>
+    <span class="page">Page 1</span>
+    </li>
+    <li>
+    <span class="title">This is the third header: Data Analysis Models.</span>
+    <span class="page">Page 1</span>
+    </li>
+    <li>
+    <span class="title">This is the fourth header: Data visualization</span>
+    <span class="page">Page 1</span>
+    </li>
+    <li>
+    <span class="title">This is the fifth header: Statisical Analysis</span>
+    <span class="page">Page 1</span>
+    </li>
+       <li>
+    <span class="title">This is the sixth header: Equation(s)</span>
+    <span class="page">Page 1</span>
+    </li>
+       <li>
+    <span class="title">This is the seventh header: Background in Data Analysis</span>
+    <span class="page">Page 1</span>
+    </li>
+       <li>
+    <span class="title">This is the eighth header: Data Visual Concepts</span>
+    <span class="page">Page 1</span>
+    </li>
+       <li>
+    <span class="title">This is the nineth header: Data Science Video</span>
+    <span class="page">Page 1</span>
+    </li>
+    <li>
+    <span class="title">Footnotes</span>
+    <span class="page">Page 1</span>
+    </li>
+</ol>
+
+<h1>This is the first header: Introduction to Data Science.</h1>
+<p>Filler text: Lorem ipsum odor amet, consectetuer adipiscing elit. Venenatis auctor cubilia aliquam sollicitudin ligula? Ac pulvinar torquent duis libero maecenas semper adipiscing. Curabitur sapien integer eget consectetur eget ex dictumst. Maecenas pulvinar magnis placerat commodo dapibus sagittis placerat aliquet. Nulla cras libero praesent nunc accumsan luctus facilisis nam. Consequat dapibus rhoncus, torquent primis interdum quisque? Suspendisse scelerisque nisl auctor urna odio condimentum odio leo. Ut commodo est fusce dui lectus conubia auctor.</p>
+
+
+<h2> This is the second header: Methodology in Data Analysis.</h2>
+<div class="row">
+<div class="column"> 
+<h3>Column1</h3>
+<p>Lorem ipsum odor amet, consectetuer adipiscing elit. Dui mus aliquam posuere felis egestas pellentesque montes elit. Felis eu est pretium pulvinar pharetra. Urna elementum consectetur cursus imperdiet commodo felis. Mauris quis placerat maximus libero ante platea aliquam lectus. Tristique taciti felis dapibus conubia phasellus urna finibus tempus mollis</p>
+</div>
+
+<div class="column"> 
+<h3>Column2</h3>
+<p>Lorem ipsum trewd, hytd gfesr hhgr vcdsaaqwq vrttewsd vewasdqqwxxc nniy jhtyybfd terty geart frwxcbv felis mollis quis cest yesir tempus ante liberio montes elit. Mauris dui mus alierbg cjase. ftrbdwner jgnui uiyt. hret fders bretu iopljk.</p>
+</div> 
+</div>
+
+
+<h3> This is the third header: Data Analysis Models.</h3>
+<ul>
+    <li>First item on the list</li>
+    <li>This is second item on the list.</li>
+    <li>Third item on the list. Going to add one more bullet point to this list.</li>
+    <li>Fourth item on the list. Last item on the list.</li>
+</ul>
+
+<h2>This is the fourth header: Data visualization</h2>
+|Date| Amount spent | Item |
+|----|--------------|------|
+|9/1/2024|60.58| Trader Joe's groceries|
+|9/3/2024|3.50| Ice cream|
+|9/5/2024|70.54| New shoes|
+
+<h2>This is the fifth header: Statisical Analysis</h2>
+<p>The following equation has been proven to be true: $5+8=13$</p>
+
+
+<h2>This is the sixth header: Equation(s)</h2>
+<p>In early education, students learn the Pythagorean Thereom: $$(a^2 + b^2 = c^2)$$ in their math course. <a href="footnote-1">[1]</a></p>
+
+<p>The following book is about a programming language used in data science by Wickham, Hadley and Cetinkaya-Rundel, Mine and Grolemund, Garrett <cite>R for data science</cite><a href="footnote-2"> [2]</a></p>
+
+<h2>This is the seventh header: Background in Data Analysis</h2>
+<p> This is a quote about the data science field: <q> Data is the language of the powerhouse </q> from Jodi Petersen.<a href="footnote-3">[3]</a></p>
+
+<h2>This is the eighth header: Data Visual Concepts</h2>
+<p>The following is a beautiful image of the Washington Monument during the spring time in Washington, D.C.</p>
+<img src="washington dc image1.jpg" alt="Washington dc1"><a href="footnote-4">[4]</a>
+
+<p>This is a pretty image of the Jefferson Memorial during the spring time in Washington, D.C.</p>
+<img src="washington dc image2.jpg" alt="Washington dc2"><a href="footnote-5">[5]</a>
+
+<p>The following is a mermaid diagram</p>
+<img src="mermaid diagram.png" alt="diagram"><a href="footnote-6">[6]</a>
+
+
+<h2>This is the nineth header: Data Science Video</h2>
+<p>The following is  video of serene mountains.</p>
+<video width="400" height="300" controls>
+  <source src="mountains.mp4" type="video/mp4">
+</video><a href="footnote-7">[7]</a>
+
+
+<h2>Footnotes:</h2>
+<p id="footnote-1"> [1] This is footnote one. Source for Pythagorean Thereom: https://en.wikipedia.org/wiki/Pythagorean_theorem</p>
+<p id="footnote-1"> [2] This is footnote two. Further citation for the <cite>R in Data Science</cite> book can be found in the following <cite> @book{wickham2023r,
+  title={R for data science},
+  author={Wickham, Hadley and {\c{C}}etinkaya-Rundel, Mine and Grolemund, Garrett},
+  year={2023},
+  publisher={" O'Reilly Media, Inc."}}</cite>
+
+<p id="footnote-2"> [3] This is footnote three Jodi Petersen quote is from the following link: https://coresignal.com/blog/data-science-quotes/</p>
+<p id="footnote-3"> [4] This is footnote four. The first image of Washington, D.C. is from the following link: https://images.app.goo.gl/DsDDNQkGSA3R12Qy8 </p>
+<p id="footnote-4"> [5] This is footnote five The second image of Washington, D.C. is from the following link:https://images.app.goo.gl/AXf4c5mu3CorvRUZ9</p>
+<p id="footnote-5"> [6] This is footnote six The mermaid diagram is from the following link:https://quarto.org/docs/authoring/diagrams.html</p>
+<p id="footnote-6"> [7] This is the seventh footnote. The video of the mountains is from the following link: https://pixabay.com/videos/nature-green-4k-landscape-clouds-31301/</p>

@@ -1,0 +1,22 @@
+Last login: Thu Sep 12 18:47:31 on ttys003
+(base) jenyanniguo@Yannis-MacBook-Pro ~ % git clone https://github.com/JenYanni/5000-lab-1.2.git
+Cloning into '5000-lab-1.2'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (3/3), done.
+(base) jenyanniguo@Yannis-MacBook-Pro ~ % 
+
+(base) jenyanniguo@Yannis-MacBook-Pro ~ % cd 5000-lab-1.2/simple_quarto_website
+(base) jenyanniguo@Yannis-MacBook-Pro simple_quarto_website % rm styles.css
+(base) jenyanniguo@Yannis-MacBook-Pro simple_quarto_website % mkdir images
+(base) jenyanniguo@Yannis-MacBook-Pro simple_quarto_website % mkdir slides
+(base) jenyanniguo@Yannis-MacBook-Pro simple_quarto_website % quarto convert about.qmd
+Converted to about.ipynb
+(base) jenyanniguo@Yannis-MacBook-Pro simple_quarto_website % ls
+_quarto.yml	about.qmd	index.qmd
+about.ipynb	images		slides
+(base) jenyanniguo@Yannis-MacBook-Pro simple_quarto_website % more reference.bib 
+reference.bib: No such file or directory
+(base) jenyanniguo@Yannis-MacBook-Pro simple_quarto_website % 
+
