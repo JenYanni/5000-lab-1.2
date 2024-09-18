@@ -1,6 +1,7 @@
 ---
 title: "DSAN 5000 lab 1.2 simple_quarto_website"
 Author: Jen Guo
+bibliography: reference.bib
 ---
 
 This is a Quarto website.
@@ -49,6 +50,10 @@ To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
     <span class="title">Footnotes</span>
     <span class="page">Page 1</span>
     </li>
+    <li>
+    <span class="title">References</span>
+    <span class="page">Page 1</span>
+    </li>
 </ol>
 
 <h1>This is the first header: Introduction to Data Science.</h1>
@@ -90,8 +95,9 @@ To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
 
 <h2>This is the sixth header: Equation(s)</h2>
 <p>In early education, students learn the Pythagorean Thereom: $$(a^2 + b^2 = c^2)$$ in their math course. <a href="footnote-1">[1]</a></p>
+<br></br>
 
-<p>The following book is about a programming language used in data science by Wickham, Hadley and Cetinkaya-Rundel, Mine and Grolemund, Garrett <cite>R for data science</cite><a href="footnote-2"> [2]</a></p>
+<p>The following book is about a programming language used in data science by Wickham, Hadley and Cetinkaya-Rundel, Mine and Grolemund, Garrett <cite>R for data science</cite><a href="footnote-2"> [2]</a>@wickham2023r</p>
 
 <h2>This is the seventh header: Background in Data Analysis</h2>
 <p> This is a quote about the data science field: <q> Data is the language of the powerhouse </q> from Jodi Petersen.<a href="footnote-3">[3]</a></p>
@@ -103,8 +109,17 @@ To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
 <p>This is a pretty image of the Jefferson Memorial during the spring time in Washington, D.C.</p>
 <img src="washington dc image2.jpg" alt="Washington dc2"><a href="footnote-5">[5]</a>
 
-<p>The following is a mermaid diagram</p>
-<img src="mermaid diagram.png" alt="diagram"><a href="footnote-6">[6]</a>
+<p>The following is a mermaid diagram</p><a href="footnote-6">[6]</a>
+
+```{mermaid}
+graph TD
+  A --> B
+  A --> C
+  B --> D
+  C --> D 
+  D --> E
+  D --> F
+```
 
 
 <h2>This is the nineth header: Data Science Video</h2>
@@ -116,14 +131,10 @@ To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
 
 <h2>Footnotes:</h2>
 <p id="footnote-1"> [1] This is footnote one. Source for Pythagorean Thereom: https://en.wikipedia.org/wiki/Pythagorean_theorem</p>
-<p id="footnote-1"> [2] This is footnote two. Further citation for the <cite>R in Data Science</cite> book can be found in the following <cite> @book{wickham2023r,
-  title={R for data science},
-  author={Wickham, Hadley and {\c{C}}etinkaya-Rundel, Mine and Grolemund, Garrett},
-  year={2023},
-  publisher={" O'Reilly Media, Inc."}}</cite>
+<p id="footnote-1"> [2] This is footnote two. Further citation for the <cite>R in Data Science</cite> book can be found in the following <cite>@wickham2023r</cite>
 
 <p id="footnote-2"> [3] This is footnote three Jodi Petersen quote is from the following link: https://coresignal.com/blog/data-science-quotes/</p>
 <p id="footnote-3"> [4] This is footnote four. The first image of Washington, D.C. is from the following link: https://images.app.goo.gl/DsDDNQkGSA3R12Qy8 </p>
 <p id="footnote-4"> [5] This is footnote five The second image of Washington, D.C. is from the following link:https://images.app.goo.gl/AXf4c5mu3CorvRUZ9</p>
-<p id="footnote-5"> [6] This is footnote six The mermaid diagram is from the following link:https://quarto.org/docs/authoring/diagrams.html</p>
+<p id="footnote-5"> [6] This is footnote six The mermaid diagram code is from the following link: https://ipv6.rs/tutorial/macOS/Mermaid/</p>
 <p id="footnote-6"> [7] This is the seventh footnote. The video of the mountains is from the following link: https://pixabay.com/videos/nature-green-4k-landscape-clouds-31301/</p>

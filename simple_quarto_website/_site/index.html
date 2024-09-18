@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -66,6 +86,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script src="site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -196,6 +219,9 @@ Table of Contents
 <li>
 <span class="title">Footnotes</span> <span class="page">Page 1</span>
 </li>
+<li>
+<span class="title">References</span> <span class="page">Page 1</span>
+</li>
 </ol>
 <h1>
 This is the first header: Introduction to Data Science.
@@ -282,8 +308,9 @@ This is the sixth header: Equation(s)
 <p>
 In early education, students learn the Pythagorean Thereom: <span class="math display">\[(a^2 + b^2 = c^2)\]</span> in their math course. <a href="footnote-1">[1]</a>
 </p>
+<p><br><br></p>
 <p>
-The following book is about a programming language used in data science by Wickham, Hadley and Cetinkaya-Rundel, Mine and Grolemund, Garrett <cite>R for data science</cite><a href="footnote-2"> [2]</a>
+The following book is about a programming language used in data science by Wickham, Hadley and Cetinkaya-Rundel, Mine and Grolemund, Garrett <cite>R for data science</cite><a href="footnote-2"> [2]</a><span class="citation" data-cites="wickham2023r">Wickham, Çetinkaya-Rundel, and Grolemund (<a href="#ref-wickham2023r" role="doc-biblioref">2023</a>)</span>
 </p>
 <h2 class="anchored">
 This is the seventh header: Background in Data Analysis
@@ -305,7 +332,25 @@ This is a pretty image of the Jefferson Memorial during the spring time in Washi
 <p>
 The following is a mermaid diagram
 </p>
-<p><img src="mermaid diagram.png" alt="diagram"><a href="footnote-6">[6]</a></p>
+<p><a href="footnote-6">[6]</a></p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">graph TD
+  A --&gt; B
+  A --&gt; C
+  B --&gt; D
+  C --&gt; D 
+  D --&gt; E
+  D --&gt; F
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
 <h2 class="anchored">
 This is the nineth header: Data Science Video
 </h2>
@@ -323,7 +368,7 @@ Footnotes:
 [1] This is footnote one. Source for Pythagorean Thereom: https://en.wikipedia.org/wiki/Pythagorean_theorem
 </p>
 <p id="footnote-1">
-</p><p>[2] This is footnote two. Further citation for the <cite>R in Data Science</cite> book can be found in the following <cite> <span class="citation" data-cites="book">@book</span>{wickham2023r, title={R for data science}, author={Wickham, Hadley and {}etinkaya-Rundel, Mine and Grolemund, Garrett}, year={2023}, publisher={” O’Reilly Media, Inc.”}}</cite></p>
+</p><p>[2] This is footnote two. Further citation for the <cite>R in Data Science</cite> book can be found in the following <cite><span class="citation" data-cites="wickham2023r">Wickham, Çetinkaya-Rundel, and Grolemund (<a href="#ref-wickham2023r" role="doc-biblioref">2023</a>)</span></cite></p>
 <p id="footnote-2">
 [3] This is footnote three Jodi Petersen quote is from the following link: https://coresignal.com/blog/data-science-quotes/
 </p>
@@ -334,7 +379,7 @@ Footnotes:
 [5] This is footnote five The second image of Washington, D.C. is from the following link:https://images.app.goo.gl/AXf4c5mu3CorvRUZ9
 </p>
 <p id="footnote-5">
-[6] This is footnote six The mermaid diagram is from the following link:https://quarto.org/docs/authoring/diagrams.html
+[6] This is footnote six The mermaid diagram code is from the following link: https://ipv6.rs/tutorial/macOS/Mermaid/
 </p>
 <p id="footnote-6">
 [7] This is the seventh footnote. The video of the mountains is from the following link: https://pixabay.com/videos/nature-green-4k-landscape-clouds-31301/
@@ -342,7 +387,12 @@ Footnotes:
 
 
 
-</main> <!-- /main -->
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-wickham2023r" class="csl-entry" role="listitem">
+Wickham, Hadley, Mine Çetinkaya-Rundel, and Garrett Grolemund. 2023. <em>R for Data Science</em>. " O’Reilly Media, Inc.".
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
